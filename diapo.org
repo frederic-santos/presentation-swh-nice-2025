@@ -2,6 +2,7 @@
 #+AUTHOR: Frédéric Santos
 #+EMAIL: frederic.santos@u-bordeaux.fr
 #+DATE: 17 octobre 2025
+#+EXPORT_FILE_NAME: ./index.html
 #+REVEAL_INIT_OPTIONS: width:1650, height:950, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'fade', slideNumber:'c/t'
 #+OPTIONS: toc:nil email:t timestamp:nil reveal_global_header:t
 #+REVEAL_THEME: sky
@@ -180,3 +181,8 @@ Cette présentation est un condensé d'une leçon pour Programming Historian [ci
   :UNNUMBERED: t
   :END:
 #+print_bibliography:
+
+* Emacs config :noexport:
+;;; Local Variables:
+;;; org-reveal-root:"./reveal.js"
+;;; End:
