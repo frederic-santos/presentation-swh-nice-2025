@@ -9,9 +9,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/dist/reveal.css"/>
+<link rel="stylesheet" href="./reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/dist/theme/sky.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/dist/theme/sky.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -20,7 +20,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/css/print/pdf.css';
+        link.href = './reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -33,8 +33,8 @@
 <h2 class="author">Frédéric Santos</h2><h2 class="email"><a href="mailto:frederic.santos@u-bordeaux.fr">frederic.santos@u-bordeaux.fr</a></h2><h2 class="date">17 octobre 2025</h2>
 </section>
 <section>
-<section id="slide-orge0d5947">
-<h2 id="orge0d5947"><span class="section-number-2">1.</span> Pourquoi archiver les logiciels de la recherche ?</h2>
+<section id="slide-org3cf8e15">
+<h2 id="org3cf8e15"><span class="section-number-2">1.</span> Pourquoi archiver les logiciels de la recherche ?</h2>
 <ul>
 <li>Un complément essentiel à (mais pour l&rsquo;heure plus confidentiel que) l&rsquo;archivage des données de recherche</li>
 <li>Une condition essentielle de la <i>reproductibilité computationnelle</i></li>
@@ -45,18 +45,18 @@
 </section>
 </section>
 <section>
-<section id="slide-orge4d6e30">
-<h2 id="orge4d6e30"><span class="section-number-2">2.</span> Présentation de Software Heritage</h2>
+<section id="slide-orgae22d8b">
+<h2 id="orgae22d8b"><span class="section-number-2">2.</span> Présentation de Software Heritage</h2>
 
-<div id="orgeb9829d" class="figure">
+<div id="org579a0e8" class="figure">
 <p><img src="./images/software-heritage-logo.png" alt="software-heritage-logo.png" />
 </p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-org4e7c09a">
-<h3 id="org4e7c09a"><span class="section-number-3">2.1.</span> Missions</h3>
+<section id="slide-org31dfc8b">
+<h3 id="org31dfc8b"><span class="section-number-3">2.1.</span> Missions</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Software Heritage est une initiative qui a pour but d&rsquo;archiver <i>exhaustivement</i> <a href="https://perma.cc/4RTF-KP2A">le patrimoine mondial logiciel de l&rsquo;humanité</a>.
@@ -76,8 +76,8 @@ Pour cela, ses trois missions sont :
 </section>
 </section>
 <section>
-<section id="slide-orgdc14b76">
-<h3 id="orgdc14b76"><span class="section-number-3">2.2.</span> Soutiens et infrastructure</h3>
+<section id="slide-org904c39f">
+<h3 id="org904c39f"><span class="section-number-3">2.2.</span> Soutiens et infrastructure</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Software Heritage (organisme à but non-lucratif) est soutenu par l&rsquo;Inria et l&rsquo;Unesco. Les coûts d&rsquo;infrastructure sont en effet élevés au vu du matériel à archiver, avec (en 2025) :
@@ -98,8 +98,8 @@ De plus, depuis 2025, SWH dispose de plusieurs <i>miroirs</i> mondiaux.
 </section>
 </section>
 <section>
-<section id="slide-orgec8e28c">
-<h2 id="orgec8e28c"><span class="section-number-2">3.</span> L&rsquo;archive Software Heritage</h2>
+<section id="slide-org55eb3fe">
+<h2 id="org55eb3fe"><span class="section-number-2">3.</span> L&rsquo;archive Software Heritage</h2>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Software Heritage collecte le code source de deux manières différentes : principalement par un processus automatisé, complété par une possibilité d&rsquo;archivage manuel à la demande de <i>tout utilisateur</i> (pas nécessairement de l&rsquo;auteur du logiciel !).
@@ -108,8 +108,8 @@ Software Heritage collecte le code source de deux manières différentes : princ
 </section>
 </section>
 <section>
-<section id="slide-orgbbd7b39">
-<h3 id="orgbbd7b39"><span class="section-number-3">3.1.</span> Le processus d&rsquo;archivage automatisé</h3>
+<section id="slide-orgf9ddd76">
+<h3 id="orgf9ddd76"><span class="section-number-3">3.1.</span> Le processus d&rsquo;archivage automatisé</h3>
 <ul>
 <li><i>Moisson</i> automatique et périodique des principales forges de développement (GitHub, GitLab.com, Sourceforge, &#x2026;), ainsi que de dépôts &laquo;&nbsp;langage-spécifiques&nbsp;&raquo; (CRAN, PyPi, &#x2026;).</li>
 <li>Archivage de <i>tout l&rsquo;historique de développement</i> des projets.</li>
@@ -120,8 +120,8 @@ Software Heritage collecte le code source de deux manières différentes : princ
 </section>
 </section>
 <section>
-<section id="slide-org49d9217">
-<h3 id="org49d9217"><span class="section-number-3">3.2.</span> Alternative : l&rsquo;archivage manuel</h3>
+<section id="slide-org6c7ee81">
+<h3 id="org6c7ee81"><span class="section-number-3">3.2.</span> Alternative : l&rsquo;archivage manuel</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 En complément, il est également possible <a href="https://archive.softwareheritage.org/save/">de demander manuellement</a> l&rsquo;archivage d&rsquo;un nouveau dépôt, ou la mise à jour d&rsquo;un dépôt existant.
@@ -137,8 +137,8 @@ En complément, il est également possible <a href="https://archive.softwareheri
 </section>
 </section>
 <section>
-<section id="slide-orgd04b1d8">
-<h3 id="orgd04b1d8"><span class="section-number-3">3.3.</span> Intermède : le problème des métadonnées</h3>
+<section id="slide-orgbce3d7b">
+<h3 id="orgbce3d7b"><span class="section-number-3">3.3.</span> Intermède : le problème des métadonnées</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Pour que le logiciel archivé soit correctement &laquo;&nbsp;découvrable&nbsp;&raquo; par la suite, il est nécessaire que des métadonnées soient indiquées de manière structurée.
@@ -153,8 +153,8 @@ Pour que le logiciel archivé soit correctement &laquo;&nbsp;découvrable&nbsp;&
 </section>
 </section>
 <section>
-<section id="slide-org0ec29a6">
-<h3 id="org0ec29a6"><span class="section-number-3">3.4.</span> Contenu de l&rsquo;archive</h3>
+<section id="slide-org484c36d">
+<h3 id="org484c36d"><span class="section-number-3">3.4.</span> Contenu de l&rsquo;archive</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 En plus du contenu déjà mentionné, l&rsquo;archive propose aussi notamment :
@@ -170,8 +170,8 @@ En plus du contenu déjà mentionné, l&rsquo;archive propose aussi notamment :
 </section>
 </section>
 <section>
-<section id="slide-org9c5c2ab">
-<h3 id="org9c5c2ab"><span class="section-number-3">3.5.</span> Recherche dans l&rsquo;archive</h3>
+<section id="slide-orgb59e9f2">
+<h3 id="orgb59e9f2"><span class="section-number-3">3.5.</span> Recherche dans l&rsquo;archive</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 <a href="https://archive.softwareheritage.org/">Lien vers l&rsquo;archive publique SWH</a>
@@ -194,8 +194,8 @@ L&rsquo;archive possède son moteur de recherche intégré, qui permet notamment
 </section>
 </section>
 <section>
-<section id="slide-org087f4ed">
-<h2 id="org087f4ed"><span class="section-number-2">4.</span> Le SWHID : un outil pour rendre les logiciels identifiables</h2>
+<section id="slide-orgc0e80fe">
+<h2 id="orgc0e80fe"><span class="section-number-2">4.</span> Le SWHID : un outil pour rendre les logiciels identifiables</h2>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Le SWHID (Software Hash Identifier) est un identifiant pérenne utilisé pour identifier de manière unique un morceau de code source logiciel et sa version.
@@ -212,8 +212,8 @@ Le SWHID est une norme similaire au DOI mais spécifiquement conçue pour le cod
 </section>
 </section>
 <section>
-<section id="slide-org505f18d">
-<h3 id="org505f18d"><span class="section-number-3">4.1.</span> Pourquoi et quand citer des logiciels</h3>
+<section id="slide-org4c95617">
+<h3 id="org4c95617"><span class="section-number-3">4.1.</span> Pourquoi et quand citer des logiciels</h3>
 <ul>
 <li>Si le logiciel a eu un rôle central dans les résultats d&rsquo;une publication.</li>
 <li>Pour permettre aux lecteurs de reproduire les résultats, en utilisant <i>l&rsquo;exacte même version</i> de ce logiciel.</li>
@@ -223,8 +223,8 @@ Le SWHID est une norme similaire au DOI mais spécifiquement conçue pour le cod
 </section>
 </section>
 <section>
-<section id="slide-org8492bb8">
-<h3 id="org8492bb8"><span class="section-number-3">4.2.</span> Les besoins d&rsquo;identification spécifiques aux logiciels</h3>
+<section id="slide-orga90761a">
+<h3 id="orga90761a"><span class="section-number-3">4.2.</span> Les besoins d&rsquo;identification spécifiques aux logiciels</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Par rapport à la publication de données (un contenu plus &laquo;&nbsp;figé&nbsp;&raquo;), les logiciels ont des besoins spécifiques :
@@ -240,8 +240,8 @@ Par rapport à la publication de données (un contenu plus &laquo;&nbsp;figé&nb
 </section>
 </section>
 <section>
-<section id="slide-org8030f9b">
-<h3 id="org8030f9b"><span class="section-number-3">4.3.</span> Obtenir et utiliser un SWHID</h3>
+<section id="slide-org6a18f18">
+<h3 id="org6a18f18"><span class="section-number-3">4.3.</span> Obtenir et utiliser un SWHID</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Un SWHID est assimilable à un &laquo;&nbsp;DOI pour du logiciel&nbsp;&raquo;, et répond donc aux besoins spécifiques évoqués précédemment.
@@ -261,15 +261,15 @@ Un SWHID ne pointe pas seulement vers un logiciel, mais peut pointer vers :
 </section>
 </section>
 <section>
-<section id="slide-org8fe2f5e">
-<h2 id="org8fe2f5e"><span class="section-number-2">5.</span> Bonus</h2>
+<section id="slide-org3ec65bc">
+<h2 id="org3ec65bc"><span class="section-number-2">5.</span> Bonus</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 </section>
 </section>
 <section>
-<section id="slide-org7a54d0d">
-<h3 id="org7a54d0d"><span class="section-number-3">5.1.</span> Software Heritage et HAL</h3>
+<section id="slide-org6e14210">
+<h3 id="org6e14210"><span class="section-number-3">5.1.</span> Software Heritage et HAL</h3>
 <ul>
 <li>Depuis un passé relativement récent, HAL accepte également les dépôts de logiciels.</li>
 <li>Pour faciliter cette opération, on peut simplement soumettre un identifiant SWHID dans l&rsquo;interface de HAL, et les métadonnées sont complétées automatiquement. (Sous réserve que l&rsquo;auteur du logiciel les ait correctement et exhaustivement renseignées !)</li>
@@ -278,8 +278,8 @@ Un SWHID ne pointe pas seulement vers un logiciel, mais peut pointer vers :
 </section>
 </section>
 <section>
-<section id="slide-org17438db">
-<h3 id="org17438db"><span class="section-number-3">5.2.</span> Software Heritage vs. Nakala / Zenodo</h3>
+<section id="slide-org4478345">
+<h3 id="org4478345"><span class="section-number-3">5.2.</span> Software Heritage vs. Nakala / Zenodo</h3>
 <div class="column" style="float:left; text-align:left; width: 100%">
 <p>
 Malgré une offre en partie commune en ce qui concerne le logiciel (archivage pérenne et citabilité du code archivé), Software Heritage et Zenodo répondent initialement à des logiques différentes :
@@ -338,16 +338,16 @@ Il est néanmoins possible (et parfois pertinent) d&rsquo;utiliser les deux pour
 </section>
 </section>
 <section>
-<section id="slide-org621c540">
-<h3 id="org621c540"><span class="section-number-3">5.3.</span> Pour aller plus loin</h3>
+<section id="slide-orgc0d11fb">
+<h3 id="orgc0d11fb"><span class="section-number-3">5.3.</span> Pour aller plus loin</h3>
 <p>
 Cette présentation est un condensé d&rsquo;une leçon pour Programming Historian (<a href="#citeproc_bib_item_1">Granger et al., 2024</a>), librement disponible en ligne.
 </p>
 </section>
 </section>
 <section>
-<section id="slide-orga8cd6f0">
-<h2 id="orga8cd6f0">Références</h2>
+<section id="slide-org6f95d40">
+<h2 id="org6f95d40">Références</h2>
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Granger, S., Mélès, B., &#38; Santos, F. (2024). Préserver et rendre identifiables les logiciels de recherche avec Software Heritage. <i>Programming historian en français</i>, <i>6</i>. <a href="https://doi.org/10.46430/phfr0034">https://doi.org/10.46430/phfr0034</a></div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Spinellis, D. (2003). The decay and failures of web references. <i>Communications of the acm</i>, <i>46</i>(1), 71–77. <a href="https://doi.org/10.1145/602421.602422">https://doi.org/10.1145/602421.602422</a></div>
@@ -357,10 +357,10 @@ Cette présentation est un condensé d&rsquo;une leçon pour Programming Histori
 </div>
 </div>
 <p> Créé par Frédéric Santos </p>
-<script src="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/dist/reveal.js"></script>
-<script src="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/plugin/markdown/markdown.js"></script>
-<script src="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/plugin/zoom/zoom.js"></script>
-<script src="/home/fsantos/PACEA_MyCore/Logiciels/reveal_js/plugin/notes/notes.js"></script>
+<script src="./reveal.js/dist/reveal.js"></script>
+<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+<script src="./reveal.js/plugin/notes/notes.js"></script>
 
 
 <script>
