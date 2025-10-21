@@ -1,0 +1,6 @@
+#+TITLE: Présentation de Software Heritage, Journée « Données & SHS », 17/10/2025
+#+AUTHOR: Frédéric Santos
+
+Ce dépôt contient le diaporama (HTML) et son fichier source (.org) de la présentation effectuée lors de la [[https://donneesshs2025.sciencesconf.org/resource/page/id/1][Journée « Données & SHS »]] en octobre 2025.
+
+Tous les fichiers sont sous licence [[http://creativecommons.org/licenses/by-nc-sa/4.0/][Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]].

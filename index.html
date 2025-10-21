@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Présentation de Software Heritage</title>
+<meta name="author" content="Frédéric Santos"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/dist/theme/sky.css" id="theme"/>
+
+<meta name="description" content="Présentation de Software Heritage.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Présentation de Software Heritage</h1><p class="subtitle"></p>
+<h2 class="author">Frédéric Santos</h2><h2 class="email"><a href="mailto:frederic.santos@u-bordeaux.fr">frederic.santos@u-bordeaux.fr</a></h2><h2 class="date">17 octobre 2025</h2>
+</section>
+<section>
+<section id="slide-org97fa4b7">
+<h2 id="org97fa4b7"><span class="section-number-2">1.</span> Pourquoi archiver les logiciels de la recherche ?</h2>
+<ul>
+<li>Un complément essentiel à (mais pour l&rsquo;heure plus confidentiel que) l&rsquo;archivage des données de recherche</li>
+<li>Une condition essentielle de la <i>reproductibilité computationnelle</i></li>
+<li>Un article de Spinellis (<a href="#citeproc_bib_item_2">2003</a>) montre qu&rsquo;il y a nombreux liens morts dans les publications scientifiques, et que la durée de vie moyenne d&rsquo;une URL y est seulement de quelques années !</li>
+<li>Certaines plateformes d&rsquo;hébergement de code (e.g., <a href="https://perma.cc/N2HS-UVT2">Google Code</a>) ont tout simplement disparu du jour au lendemain</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgdd7faf3">
+<h2 id="orgdd7faf3"><span class="section-number-2">2.</span> Présentation de Software Heritage</h2>
+
+<div id="orgdd3c531" class="figure">
+<p><img src="./images/software-heritage-logo.png" alt="software-heritage-logo.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org9cbdc26">
+<h3 id="org9cbdc26"><span class="section-number-3">2.1.</span> Missions</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Software Heritage est une initiative qui a pour but d&rsquo;archiver <i>exhaustivement</i> <a href="https://perma.cc/4RTF-KP2A">le patrimoine mondial logiciel de l&rsquo;humanité</a>.
+</p>
+
+<p>
+Pour cela, ses trois missions sont :
+</p>
+
+<ul>
+<li>la <i>collecte</i> de tout le code source publiquement disponible sur Internet ;</li>
+<li>la <i>préservation</i> durable de ce code ;</li>
+<li>de faciliter le <i>partage</i> et la citation du code source &#x2014; éventuellement en lien avec d&rsquo;autres infrastructures ou d&rsquo;autres initiatives, telles que HAL.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgc2cabd7">
+<h3 id="orgc2cabd7"><span class="section-number-3">2.2.</span> Soutiens et infrastructure</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Software Heritage (organisme à but non-lucratif) est soutenu par l&rsquo;Inria et l&rsquo;Unesco. Les coûts d&rsquo;infrastructure sont en effet élevés au vu du matériel à archiver, avec (en 2025) :
+</p>
+
+<ul>
+<li>plus de 25.000.000.000 de fichiers de code source ;</li>
+<li>plus de 380.000.000 projets logiciels ;</li>
+<li>plus de 90.000.000 d&rsquo;auteurs ;</li>
+<li>plus de 5.000 plateformes d&rsquo;hébergement de code à explorer.</li>
+
+</ul>
+
+<p>
+De plus, depuis 2025, SWH dispose de plusieurs <i>miroirs</i> mondiaux.
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org93da2dd">
+<h2 id="org93da2dd"><span class="section-number-2">3.</span> L&rsquo;archive Software Heritage</h2>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Software Heritage collecte le code source de deux manières différentes : principalement par un processus automatisé, complété par une possibilité d&rsquo;archivage manuel à la demande de <i>tout utilisateur</i> (pas nécessairement de l&rsquo;auteur du logiciel !).
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org4a9a334">
+<h3 id="org4a9a334"><span class="section-number-3">3.1.</span> Le processus d&rsquo;archivage automatisé</h3>
+<ul>
+<li><i>Moisson</i> automatique et périodique des principales forges de développement (GitHub, GitLab.com, Sourceforge, &#x2026;), ainsi que de dépôts &laquo;&nbsp;langage-spécifiques&nbsp;&raquo; (CRAN, PyPi, &#x2026;).</li>
+<li>Archivage de <i>tout l&rsquo;historique de développement</i> des projets.</li>
+<li>Pas de &laquo;&nbsp;filtrage&nbsp;&raquo; en entrée ou de pré-supposé sur l&rsquo;intérêt : <i>tout</i> ce qui est public est archivé.</li>
+<li>Seul le <i>code source</i> est archivé, pas les exécutables.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org83e0fa1">
+<h3 id="org83e0fa1"><span class="section-number-3">3.2.</span> Alternative : l&rsquo;archivage manuel</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+En complément, il est également possible <a href="https://archive.softwareheritage.org/save/">de demander manuellement</a> l&rsquo;archivage d&rsquo;un nouveau dépôt, ou la mise à jour d&rsquo;un dépôt existant.
+</p>
+
+<ul>
+<li>Aucun compte utilisateur requis pour cela.</li>
+<li>Tout utilisateur du logiciel peut demander son archivage sur SWH, pas seulement l&rsquo;auteur de ce logiciel. (Voyez-vous dans quel cas un utilisateur pourrait en faire la demande ?)</li>
+<li>Il existe un <a href="https://www.softwareheritage.org/browser-extensions/">plug-in de navigateur</a> pour faciliter l&rsquo;opération en un clic.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org9185f8b">
+<h3 id="org9185f8b"><span class="section-number-3">3.3.</span> Intermède : le problème des métadonnées</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Pour que le logiciel archivé soit correctement &laquo;&nbsp;découvrable&nbsp;&raquo; par la suite, il est nécessaire que des métadonnées soient indiquées de manière structurée.
+</p>
+
+<ul>
+<li>Solution simple et répandue : utiliser des fichiers de métadonnées langage-spécifiques (e.g., le fichier <code>DESCRIPTION</code> pour un package R, le fichier <code>Project.toml</code> pour un package Julia, &#x2026;).</li>
+<li>Solution idéale : placer un fichier <code>codemeta.json</code> à la racine du dépôt. De tels fichiers peuvent être créés aisément avec <a href="https://codemeta.github.io/codemeta-generator/">CodeMeta generator</a>.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org264a7b6">
+<h3 id="org264a7b6"><span class="section-number-3">3.4.</span> Contenu de l&rsquo;archive</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+En plus du contenu déjà mentionné, l&rsquo;archive propose aussi notamment :
+</p>
+
+<ul>
+<li>le contenu des forges fermées / désactivées ;</li>
+<li>le contenu de certaines forges institutionnelles (e.g., GitLab de l&rsquo;In2P3 du CNRS, <a href="https://documentation.huma-num.fr/gitlab/#publication-des-depots-et-archivage-de-code">GitLab d&rsquo;Huma-Num</a>, &#x2026;) ;</li>
+<li>le code source archivé dans HAL, grâce à une communication facilitée entre HAL et SWH.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga3432fe">
+<h3 id="orga3432fe"><span class="section-number-3">3.5.</span> Recherche dans l&rsquo;archive</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+<a href="https://archive.softwareheritage.org/">Lien vers l&rsquo;archive publique SWH</a>
+</p>
+
+<p>
+L&rsquo;archive possède son moteur de recherche intégré, qui permet notamment de rechercher un projet :
+</p>
+
+<ul>
+<li>par son nom ;</li>
+<li>par un glisser-déposer d&rsquo;un fichier de code source ;</li>
+<li>par un extrait de code source issu de ce projet ;</li>
+<li>en donnant le lien vers le dépôt de référence du projet (sur GitHub ou GitLab par exemple) ;</li>
+<li>en donnant le code de hachage d&rsquo;un <i>commit</i> précis ;</li>
+<li>en donnant un SWHID associé au projet.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org1f766c5">
+<h2 id="org1f766c5"><span class="section-number-2">4.</span> Le SWHID : un outil pour rendre les logiciels identifiables</h2>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Le SWHID (Software Hash Identifier) est un identifiant pérenne utilisé pour identifier de manière unique un morceau de code source logiciel et sa version.
+</p>
+
+<p>
+Le SWHID est une norme similaire au DOI mais spécifiquement conçue pour le code source des logiciels, compatible avec des systèmes de gestion de versions tels que Git.
+</p>
+
+<p>
+<a href="https://fr.wikipedia.org/wiki/Software_Hash_Identifier">(Cf. page Wikipedia)</a>
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org538d281">
+<h3 id="org538d281"><span class="section-number-3">4.1.</span> Pourquoi et quand citer des logiciels</h3>
+<ul>
+<li>Si le logiciel a eu un rôle central dans les résultats d&rsquo;une publication.</li>
+<li>Pour permettre aux lecteurs de reproduire les résultats, en utilisant <i>l&rsquo;exacte même version</i> de ce logiciel.</li>
+<li>Le logiciel doit être citable <i>en lui-même</i> : il n&rsquo;y a peut-être pas de publication associée.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org07b6e9a">
+<h3 id="org07b6e9a"><span class="section-number-3">4.2.</span> Les besoins d&rsquo;identification spécifiques aux logiciels</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Par rapport à la publication de données (un contenu plus &laquo;&nbsp;figé&nbsp;&raquo;), les logiciels ont des besoins spécifiques :
+</p>
+
+<ul>
+<li>ils sont évolutifs par nature (les contributeurs ou la plateforme de développement peut changer en cours de vie) ;</li>
+<li>ils changent régulièrement de version ;</li>
+<li>ce sont des contenus souvent &laquo;&nbsp;modulaires&nbsp;&raquo;, avec des dépendances complexes. On peut souhaiter citer uniquement un composant précis, plutôt que l&rsquo;ensemble du logiciel.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgbb722c5">
+<h3 id="orgbb722c5"><span class="section-number-3">4.3.</span> Obtenir et utiliser un SWHID</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Un SWHID est assimilable à un &laquo;&nbsp;DOI pour du logiciel&nbsp;&raquo;, et répond donc aux besoins spécifiques évoqués précédemment.
+</p>
+
+<p>
+Un SWHID ne pointe pas seulement vers un logiciel, mais peut pointer vers :
+</p>
+
+<ul>
+<li>un projet logiciel dans son ensemble ;</li>
+<li>un point précis de l&rsquo;historique de développement (version, ou même <i>commit</i>) ;</li>
+<li>un extrait de code précis à un moment précis du développement.</li>
+
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org52d79f0">
+<h2 id="org52d79f0"><span class="section-number-2">5.</span> Bonus</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org500d514">
+<h3 id="org500d514"><span class="section-number-3">5.1.</span> Software Heritage et HAL</h3>
+<ul>
+<li>Depuis un passé relativement récent, HAL accepte également les dépôts de logiciels.</li>
+<li>Pour faciliter cette opération, on peut simplement soumettre un identifiant SWHID dans l&rsquo;interface de HAL, et les métadonnées sont complétées automatiquement. (Sous réserve que l&rsquo;auteur du logiciel les ait correctement et exhaustivement renseignées !)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org91e0df6">
+<h3 id="org91e0df6"><span class="section-number-3">5.2.</span> Software Heritage vs. Nakala / Zenodo</h3>
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Malgré une offre en partie commune en ce qui concerne le logiciel (archivage pérenne et citabilité du code archivé), Software Heritage et Zenodo répondent initialement à des logiques différentes :
+</p>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fonctionnalité</th>
+<th scope="col" class="org-left">Software Heritage</th>
+<th scope="col" class="org-left">Zenodo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cas d&rsquo;usage</td>
+<td class="org-left">Code source uniquement</td>
+<td class="org-left">Généraliste : données, rapport, logiciels, &#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-left">Collecte</td>
+<td class="org-left">Automatisée</td>
+<td class="org-left">Téléversement manuel depuis un ZIP</td>
+</tr>
+
+<tr>
+<td class="org-left">Objet citable</td>
+<td class="org-left">Historique complet</td>
+<td class="org-left">Version ou snapshot précis</td>
+</tr>
+
+<tr>
+<td class="org-left">Identifiant</td>
+<td class="org-left">SWHID</td>
+<td class="org-left">DOI (plus général, moins fin)</td>
+</tr>
+</tbody>
+</table>
+
+<div class="column" style="float:left; text-align:left; width: 100%">
+<p>
+Il est néanmoins possible (et parfois pertinent) d&rsquo;utiliser les deux pour le même projet. De plus, depuis fin 2024, tout logiciel (publiquement accessible) déposé sur Zenodo <a href="https://blog.zenodo.org/2024/10/21/2024-10-21-swh/">est automatiquement archivé sur SWH</a>. Les deux plateformes sont donc désormais très bien interconnectées.
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org927293d">
+<h3 id="org927293d"><span class="section-number-3">5.3.</span> Pour aller plus loin</h3>
+<p>
+Cette présentation est un condensé d&rsquo;une leçon pour Programming Historian (<a href="#citeproc_bib_item_1">Granger et al., 2024</a>), librement disponible en ligne.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org62ec44f">
+<h2 id="org62ec44f">Références</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Granger, S., Mélès, B., &#38; Santos, F. (2024). Préserver et rendre identifiables les logiciels de recherche avec Software Heritage. <i>Programming Historian en français</i>, <i>6</i>. <a href="https://doi.org/10.46430/phfr0034">https://doi.org/10.46430/phfr0034</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Spinellis, D. (2003). The decay and failures of web references. <i>Communications of the Acm</i>, <i>46</i>(1), 71–77. <a href="https://doi.org/10.1145/602421.602422">https://doi.org/10.1145/602421.602422</a></div>
+</div>
+</section>
+</section>
+</div>
+</div>
+<p> Créé par Frédéric Santos </p>
+<script src="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/dist/reveal.js"></script>
+<script src="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/plugin/markdown/markdown.js"></script>
+<script src="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/plugin/zoom/zoom.js"></script>
+<script src="/home/pingouache/PACEA_MyCore/Logiciels/reveal_js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+width:1650, height:950, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'fade', slideNumber:'c/t'
+});
+
+</script>
+</body>
+</html>

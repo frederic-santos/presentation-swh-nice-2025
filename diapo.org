@@ -1,0 +1,182 @@
+#+TITLE: Présentation de Software Heritage
+#+AUTHOR: Frédéric Santos
+#+EMAIL: frederic.santos@u-bordeaux.fr
+#+DATE: 17 octobre 2025
+#+REVEAL_INIT_OPTIONS: width:1650, height:950, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'fade', slideNumber:'c/t'
+#+OPTIONS: toc:nil email:t timestamp:nil reveal_global_header:t
+#+REVEAL_THEME: sky
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Présentation de Software Heritage.">
+#+REVEAL_POSTAMBLE: <p> Créé par Frédéric Santos </p>
+#+BIBLIOGRAPHY: ~/PACEA_MyCore/complete_biblio.bib
+#+CITE_EXPORT: csl apa.csl
+#+LANGUAGE: fr
+
+* Pourquoi archiver les logiciels de la recherche ?
+
+- Un complément essentiel à (mais pour l'heure plus confidentiel que) l'archivage des données de recherche
+- Une condition essentielle de la /reproductibilité computationnelle/
+- Un article de [cite/t:@spinellis2003_DecayFailuresWeb] montre qu'il y a nombreux liens morts dans les publications scientifiques, et que la durée de vie moyenne d'une URL y est seulement de quelques années !
+- Certaines plateformes d'hébergement de code (e.g., [[https://perma.cc/N2HS-UVT2][Google Code]]) ont tout simplement disparu du jour au lendemain
+
+* Présentation de Software Heritage
+
+[[./images/software-heritage-logo.png]]
+
+** Missions
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Software Heritage est une initiative qui a pour but d'archiver /exhaustivement/ [[https://perma.cc/4RTF-KP2A][le patrimoine mondial logiciel de l'humanité]].
+
+Pour cela, ses trois missions sont :
+
+- la /collecte/ de tout le code source publiquement disponible sur Internet ;
+- la /préservation/ durable de ce code ;
+- de faciliter le /partage/ et la citation du code source --- éventuellement en lien avec d'autres infrastructures ou d'autres initiatives, telles que HAL.
+#+REVEAL_HTML: </div>
+
+** Soutiens et infrastructure
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Software Heritage (organisme à but non-lucratif) est soutenu par l'Inria et l'Unesco. Les coûts d'infrastructure sont en effet élevés au vu du matériel à archiver, avec (en 2025) :
+
+- plus de 25.000.000.000 de fichiers de code source ;
+- plus de 380.000.000 projets logiciels ;
+- plus de 90.000.000 d'auteurs ;
+- plus de 5.000 plateformes d'hébergement de code à explorer.
+
+De plus, depuis 2025, SWH dispose de plusieurs /miroirs/ mondiaux.
+#+REVEAL_HTML: </div>
+
+* L'archive Software Heritage
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Software Heritage collecte le code source de deux manières différentes : principalement par un processus automatisé, complété par une possibilité d'archivage manuel à la demande de /tout utilisateur/ (pas nécessairement de l'auteur du logiciel !).
+#+REVEAL_HTML: </div>
+
+** Le processus d'archivage automatisé
+
+- /Moisson/ automatique et périodique des principales forges de développement (GitHub, GitLab.com, Sourceforge, ...), ainsi que de dépôts "langage-spécifiques" (CRAN, PyPi, ...).
+- Archivage de /tout l'historique de développement/ des projets.
+- Pas de "filtrage" en entrée ou de pré-supposé sur l'intérêt : /tout/ ce qui est public est archivé.
+- Seul le /code source/ est archivé, pas les exécutables.
+
+** Alternative : l'archivage manuel
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+En complément, il est également possible [[https://archive.softwareheritage.org/save/][de demander manuellement]] l'archivage d'un nouveau dépôt, ou la mise à jour d'un dépôt existant.
+
+- Aucun compte utilisateur requis pour cela.
+- Tout utilisateur du logiciel peut demander son archivage sur SWH, pas seulement l'auteur de ce logiciel. (Voyez-vous dans quel cas un utilisateur pourrait en faire la demande ?)
+- Il existe un [[https://www.softwareheritage.org/browser-extensions/][plug-in de navigateur]] pour faciliter l'opération en un clic.
+#+REVEAL_HTML: </div>
+
+** Intermède : le problème des métadonnées
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Pour que le logiciel archivé soit correctement "découvrable" par la suite, il est nécessaire que des métadonnées soient indiquées de manière structurée.
+
+- Solution simple et répandue : utiliser des fichiers de métadonnées langage-spécifiques (e.g., le fichier =DESCRIPTION= pour un package R, le fichier =Project.toml= pour un package Julia, ...).
+- Solution idéale : placer un fichier =codemeta.json= à la racine du dépôt. De tels fichiers peuvent être créés aisément avec [[https://codemeta.github.io/codemeta-generator/][CodeMeta generator]].
+#+REVEAL_HTML: </div>
+
+** Contenu de l'archive
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+En plus du contenu déjà mentionné, l'archive propose aussi notamment :
+
+- le contenu des forges fermées / désactivées ;
+- le contenu de certaines forges institutionnelles (e.g., GitLab de l'In2P3 du CNRS, [[https://documentation.huma-num.fr/gitlab/#publication-des-depots-et-archivage-de-code][GitLab d'Huma-Num]], ...) ;
+- le code source archivé dans HAL, grâce à une communication facilitée entre HAL et SWH.
+#+REVEAL_HTML: </div>
+
+** Recherche dans l'archive
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+[[https://archive.softwareheritage.org/][Lien vers l'archive publique SWH]]
+
+L'archive possède son moteur de recherche intégré, qui permet notamment de rechercher un projet :
+
+- par son nom ;
+- par un glisser-déposer d'un fichier de code source ;
+- par un extrait de code source issu de ce projet ;
+- en donnant le lien vers le dépôt de référence du projet (sur GitHub ou GitLab par exemple) ;
+- en donnant le code de hachage d'un /commit/ précis ;
+- en donnant un SWHID associé au projet.
+#+REVEAL_HTML: </div>
+
+* Le SWHID : un outil pour rendre les logiciels identifiables
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Le SWHID (Software Hash Identifier) est un identifiant pérenne utilisé pour identifier de manière unique un morceau de code source logiciel et sa version.
+
+Le SWHID est une norme similaire au DOI mais spécifiquement conçue pour le code source des logiciels, compatible avec des systèmes de gestion de versions tels que Git.
+
+[[https://fr.wikipedia.org/wiki/Software_Hash_Identifier][(Cf. page Wikipedia)]]
+#+REVEAL_HTML: </div>
+
+** Pourquoi et quand citer des logiciels
+
+- Si le logiciel a eu un rôle central dans les résultats d'une publication.
+- Pour permettre aux lecteurs de reproduire les résultats, en utilisant /l'exacte même version/ de ce logiciel.
+- Le logiciel doit être citable /en lui-même/ : il n'y a peut-être pas de publication associée.
+
+** Les besoins d'identification spécifiques aux logiciels
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Par rapport à la publication de données (un contenu plus "figé"), les logiciels ont des besoins spécifiques :
+
+- ils sont évolutifs par nature (les contributeurs ou la plateforme de développement peut changer en cours de vie) ;
+- ils changent régulièrement de version ;
+- ce sont des contenus souvent "modulaires", avec des dépendances complexes. On peut souhaiter citer uniquement un composant précis, plutôt que l'ensemble du logiciel.
+#+REVEAL_HTML: </div>
+
+** Obtenir et utiliser un SWHID
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Un SWHID est assimilable à un "DOI pour du logiciel", et répond donc aux besoins spécifiques évoqués précédemment.
+
+Un SWHID ne pointe pas seulement vers un logiciel, mais peut pointer vers :
+
+- un projet logiciel dans son ensemble ;
+- un point précis de l'historique de développement (version, ou même /commit/) ;
+- un extrait de code précis à un moment précis du développement.
+#+REVEAL_HTML: </div>
+
+* TODO Quelques exemples en pratique :noexport:
+
+- Recherches dans l'archive, notamment par glisser-déposer
+- Obtention d'un SWHID
+- Dépôt manuel, sur le site et via le plug-in de navigateur
+
+* Bonus
+
+** Software Heritage et HAL
+
+- Depuis un passé relativement récent, HAL accepte également les dépôts de logiciels.
+- Pour faciliter cette opération, on peut simplement soumettre un identifiant SWHID dans l'interface de HAL, et les métadonnées sont complétées automatiquement. (Sous réserve que l'auteur du logiciel les ait correctement et exhaustivement renseignées !)
+
+** Software Heritage vs. Nakala / Zenodo
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Malgré une offre en partie commune en ce qui concerne le logiciel (archivage pérenne et citabilité du code archivé), Software Heritage et Zenodo répondent initialement à des logiques différentes :
+#+REVEAL_HTML: </div>
+
+| Fonctionnalité | Software Heritage               | Zenodo                                         |
+|----------------+---------------------------------+------------------------------------------------|
+| Cas d'usage    | Code source uniquement          | Généraliste : données, rapport, logiciels, ... |
+| Collecte       | Automatisée                     | Téléversement manuel depuis un ZIP             |
+| Objet citable  | Historique complet              | Version ou snapshot précis                     |
+| Identifiant    | SWHID                           | DOI (plus général, moins fin)                  |
+
+#+REVEAL_HTML: <div class="column" style="float:left; text-align:left; width: 100%">
+Il est néanmoins possible (et parfois pertinent) d'utiliser les deux pour le même projet. De plus, depuis fin 2024, tout logiciel (publiquement accessible) déposé sur Zenodo [[https://blog.zenodo.org/2024/10/21/2024-10-21-swh/][est automatiquement archivé sur SWH]]. Les deux plateformes sont donc désormais très bien interconnectées.
+#+REVEAL_HTML: </div>
+
+** Pour aller plus loin
+
+Cette présentation est un condensé d'une leçon pour Programming Historian [cite:@granger2024_PreserverRendreIdentifiables], librement disponible en ligne.
+
+* Références
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+#+print_bibliography:
